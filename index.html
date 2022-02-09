@@ -1,0 +1,150 @@
+<html>
+
+<head>
+    <title>Google Lens vs Mobilenet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/addons/p5.sound.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+
+</head>
+
+<body style="background-color: aquamarine;">
+    <div class="container">
+        <h1 class="heading">
+            <center>
+            <span>Case Study between Google Lens and Mobilenet
+            </span>
+            <br>
+            <br>
+            Google Lens
+            <img src="google lens logo.png" id="logo" class="img-responsive" style="width:125px">
+            <p class="btn btn-primary" style="font-size:20px">
+                <b>vs</b>
+            </p>
+            <br>
+            <p class="btn btn-primary">
+                Mobilenet
+            </p>
+        </center>
+        </h1>
+        <br>
+        <hr>
+        <ol style="padding:0px">
+
+            <div class="test_images col-xs-12">
+
+                <li class="col-sm-4 col-xs-12">
+                    <b>Test Image</b>
+                    <img src="remote.png" class="img-responsive">
+                </li>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>Google Lens</b>
+                    <span>Tata Sky remote</span>
+                </h5>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on - <b>Mobilenet Model</b>
+                    <span>remote control, remote</span>
+                </h5>
+
+                <div class="mini-result col-xs-12">
+                    <h4>Result -  </h4>
+                    <hr>
+                    <h4>Google Lens is more specific</h4>
+                </div>
+            </div>
+
+
+            <div class="test_images col-xs-12">
+
+                <li class="col-sm-4 col-xs-12">
+                    <b>Test Image</b>
+                    <img src="mobilephone.png" class="img-responsive">
+                </li>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>Google Lens</b>
+                    <span>Samsung Mobile</span>
+                </h5>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on - <b>Mobilenet Model</b>
+                    <span>modem</span>
+                </h5>
+
+                <div class="mini-result col-xs-12">
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4>Google Lens showed the right result</h4>
+                </div>
+            </div>
+            <div class="test_images col-xs-12">
+
+                <li class="col-sm-4 col-xs-12">
+                    <b>Test Image</b>
+                    <img src="tt racket.png" class="img-responsive">
+                </li>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>Google Lens</b>
+                    <span>Table Tennis Bat</span>
+                </h5>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on - <b>Mobilenet Model</b>
+                    <span>punching bag, punch bag, punching ball, punchball</span>
+                </h5>
+
+                <div class="mini-result col-xs-12">
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4>Google lens showed the right result </h4>
+                </div>
+            </div>
+            <div class="test_images col-xs-12">
+
+                <li class="col-sm-4 col-xs-12">
+                    <b>Test Image</b>
+                    <img src="water bottle.png" class="img-responsive">
+                </li>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>Google Lens</b>
+                    <span>Tupperware Water Bottle</span>
+                </h5>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on - <b>Mobilenet Model</b>
+                    <span>water bottle</span>
+                </h5>
+
+                <div class="mini-result col-xs-12">
+                    <h4>Result -  </h4>
+                    <hr>
+                    <h4>Google lens is more specific </h4>
+                </div>
+            </div>
+            <br><br><br>
+
+        <h3 id="conclusion" class="btn btn-primary">Google lens is better than Mobile Net according to our test.</h3>
+            
+
+        </ol>
+
+        
+    </div>
+    <br><br>
+    <div class="footer">
+        Developed By - Ruhaan Kalla
+    </div>
+</body>
